@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>FEM*mad | Lange Nacht der Forschung 2020</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/cover/">
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+  <link href="css/index.css" rel="stylesheet">
+  <link href="css/cover.css" rel="stylesheet">
+
+  </head>
+
+  <body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 mx-auto flex-column">
+
+      <main role="main" class="main-container">
+        <div id="home">
+        </div>
+        <div id="about">
+          <div class="femmad-logo col"></div>
+          <div class="row">
+            <div class="col"></div>
+            <div class="col-10">
+              <p>Alle Basteln? Alle Basteln!</p>
+              <p>Making - das "Basteln" von Dingen - ist weit verbreitet. Pullover, Möbel, Ersatzteile und neuerdings auch Masken und Face Shields werden zu Hause oder in sogenannten Makerspaces, und oft unter Zuhilfenahme von Technologie, hergestellt. Doch wer sind diese "makers"? Warum nutzen Frauen Makerspaces weniger häufig als Männer, junge Menschen öfter als ältere? Wir laden Sie ein, sich im Folgende kritisch mit diesen Fragen auseinanderzusetzen sowie Ihre eigenen Zugänge und Annahmen gemeinsam mit uns zu hinterfragen.</p>
+              <p>Diese Foschung ist Teil des Projekts „FEM*mad (Female* Engagements in Making - Making a Difference)“, welches das Center for Human-Computer Interaction der Universität Salzburg gemeinsam mit dem Happylab, dem AIT Austrian Institute of Technology und Mz*Balthazar's Lab durchführt.</p>
+            </div>
+            <div class="col"></div>
+          </div>
+        </div>
+        <div id="questions">
+          <form id="basic_info">  
+
+            <p>Who are you?</p>
+            <div class="box-component">
+              <input type="radio" name="gender" id="female" class="radio-box" value="2">
+              <label for="female"><span title="Female">F</span></label>
+
+              <input type="radio" name="gender" id="male" class="radio-box" value="4">
+              <label for="male"><span title="Male">M</span></label>
+
+              <input type="radio" name="gender" id="other" class="radio-box" value="1">
+              <label for="other"><span title="Other">D</span></label>
+            </div>
+
+            <p>How old are you?</p>
+            <div class="box-component">
+              
+              <input type="radio" name="age" id="less_18"class="radio-box" value="1">
+              <label for="less_18"><span>< 18</span></label>
+
+              <input type="radio" name="age" id="18_30"class="radio-box" value="2">
+              <label for="18_30"><span>18-30</span></label>
+
+              <input type="radio" name="age" id="31_45"class="radio-box" value="3">
+              <label for="31_45"><span>31-45</span></label>
+
+              <input type="radio" name="age" id="46_59"class="radio-box" value="1">
+              <label for="46_59"><span>46-59</span></label>
+
+              <input type="radio" name="age" id="more_60"class="radio-box" value="0">
+              <label for="more_60"><span>> 60</span></label>
+            </div>
+
+            <p>Where are you from?</p>
+            <div class="box-component">
+              <input type="radio" name="nationality" id="asia"class="radio-box" value="2">
+              <label for="asia"><span>Asia</span></label>
+
+              <input type="radio" name="nationality" id="north_america"class="radio-box" value="north_america">
+              <label for="north_america"><span>N. America</span></label>
+
+              <input type="radio" name="nationality" id="south_america"class="radio-box" value="south_america">
+              <label for="south_america"><span>S. America</span></label>
+
+              <input type="radio" name="nationality" id="africa"class="radio-box" value="1">
+              <label for="africa"><span>Africa</span></label>  
+              <input type="radio" name="nationality" id="europe"class="radio-box" value="4">
+              <label for="europe"><span>Europe</span></label>
+
+              <input type="radio" name="nationality" id="australia"class="radio-box" value="2">
+              <label for="australia"><span>Australia</span></label>
+
+              <input type="radio" name="nationality" id="antartica"class="radio-box" value="0">
+              <label for="antartica"><span>Antartica</span></label>
+            </div>
+
+            <input type="submit" class="btn btn-lg btn-secondary" value="Try Me">
+          </form>
+        </div>
+
+        <div id="result" hidden>
+          <p>Ist es nicht ärgerlich, wenn Leute glauben, sie könnten Sie anhand einiger weniger Eigenschaften beurteilen?</p>
+          <p>Mit dem Projekt FEM*mad wollen wir die Geschlechterkluft verringern, die es auch beim Zugang zu Making und Makerspaces gibt. Gegenwärtig sind nämlich nur etwa 20% der Benutzer*innen von Makerspaces weiblich*. Warum das so ist, was dagegen getan werder kann, und wie sichergestellt wird, dass Änderungen nachhaltig sind, ist Gegenstand unserer Forschung.</p>
+          <p>Wenn Sie selbst “Bastler*in” sind, positive oder negative Erfahrungen oder Zugänge zu Making oder Makerspaces haben, freuen wir uns, wenn Sie diese mit uns hier teilen: [link survey]</p>
+
+          <div id="fortune_result"></div>
+          <input id="try_again_btn" type="button" class="btn btn-lg btn-secondary" value="Try Again"">
+        </div>
+
+        <script>
+
+        </script>
+      </main>
+      <footer class="footer">
+        <div class="logo-container  row p-4">
+          <div class="chci-logo logo-item"></div>
+          <div class="mzbalthasar-logo logo-item"></div>
+          <div class="ait-logo logo-item"></div>
+          <div class="happylab-logo logo-item"></div>
+        </div>
+        <p>
+          FEM*mad (FFG Nr. 873000) ist Teil des Programms "Talente", das von der Österreichischen Forschungsförderungsgesellschaft FFG betreut und vom Bundesministerium für Verkehr, Innovation und Technologie gefördert wird.
+        </p>
+      </footer>
+
+    </div>
+    <script src="fortune_teller.js"></script>
+
+  </body>
+</html>
