@@ -22,8 +22,30 @@ body {
   color: #fff;
 }
 
+#about h4 {
+	margin-bottom: 2rem;
+}
+
+#about {
+	margin-top: 1rem;
+	margin-bottom: 5rem;
+}
+
+#result {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+#fortune_result {
+	margin-bottom: 2rem;
+}
+
+#result h4 {
+	margin-bottom: 2rem;
+}
+
 .footer {
-	margin-top: 8rem;
+	margin-top: 6rem;
 }
 
 .footer p {

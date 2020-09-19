@@ -4,6 +4,7 @@
 
   const basic_info_form = document.getElementById("basic_info");
   const try_again_btn = document.getElementById("try_again_btn");
+  const about_section = document.getElementById("about");
 
   const result_div = document.getElementById("result");
   const radiobuttons = document.getElementsByClassName("radio-box");
@@ -22,7 +23,7 @@
     const age = age_selector.value;
     const nationality = nationality_selector.value;
 
-    score = 0;
+    var score = 0;
 
     for(const element of radiobuttons){
       if(element.checked){
@@ -30,17 +31,20 @@
       }
     }
 
-    if (score <= 7) {
+    var test = score;
+    
+    if (test <= 7) {
       img_placeholder.classList.add("not_using");
-    }if(score > 7 && score < 10){
+    }if(test > 7 && test < 10){
       img_placeholder.classList.add("moderate");
-    }if (score >= 10) {
+    }if (test >= 10) {
       img_placeholder.classList.add("frequent");
     }
 
     //document.getElementById("delete_me").innerHTML = score;
 
     basic_info_form.hidden = true;
+    about_section.hidden = true;
     result_div.hidden = false;
 
 
