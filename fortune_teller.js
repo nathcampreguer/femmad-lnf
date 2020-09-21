@@ -9,7 +9,7 @@
   const result_div = document.getElementById("result");
   const radiobuttons = document.getElementsByClassName("radio-box");
 
-  let score = 0;
+  var score = 0;
 
   const img_placeholder = document.getElementById("fortune_result");
 
@@ -23,7 +23,7 @@
     const age = age_selector.value;
     const nationality = nationality_selector.value;
 
-    var score = 0;
+    //var score = 0;
 
     for(const element of radiobuttons){
       if(element.checked){
@@ -31,17 +31,15 @@
       }
     }
 
-    var test = score;
+    //var test = score;
     
-    if (test <= 7) {
+    if (score <= 7) {
       img_placeholder.classList.add("not_using");
-    }if(test > 7 && test < 10){
+    }if(score > 7 && score < 10){
       img_placeholder.classList.add("moderate");
-    }if (test >= 10) {
+    }if (score >= 10) {
       img_placeholder.classList.add("frequent");
     }
-
-    //document.getElementById("delete_me").innerHTML = score;
 
     basic_info_form.hidden = true;
     about_section.hidden = true;
@@ -52,8 +50,6 @@
   }
 
   function tryAgain(){
-    basic_info_form.hidden = false;
-    result_div.hidden = true;
 
     for(const element of radiobuttons){
       element.checked = false;
@@ -67,6 +63,10 @@
       img_placeholder.classList.remove("frequent");
     }
     score = 0;
+
+    basic_info_form.hidden = false;
+    about_section.hidden = false;
+    result_div.hidden = true;
 
   }
 
